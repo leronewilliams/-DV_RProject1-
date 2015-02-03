@@ -1,0 +1,17 @@
+{
+    "contents" : "\nlibrary(\"ggplot2\")\n\"Displaying the top few rows of a dataframe:\"\nhead(diamonds)\n\"Selecting a subset of columns from a dataframe:\"\nhead(subset(diamonds, select = c(carat, cut)))\n\"Selecting a subset of rows from a dataframe:\"\nhead(subset(diamonds, cut == \"Ideal\" & price > 5000))\n\"Find average price group by color (plyr package is needed)\"\nlibrary(\"plyr\", lib.loc=\"/Library/Frameworks/R.framework/Versions/3.1/Resources/library\")\nddply(subset(diamonds, cut == \"Ideal\" & price > 5000),~color, summarise, o=mean(price, na.rm = TRUE))",
+    "created" : 1422582745457.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "906550836",
+    "id" : "5346C3D9",
+    "lastKnownWriteTime" : 1422582774,
+    "path" : "~/GitHub/DataVisualization/DataVisualization/RWorkshop/02 R Dataframes/Dataframes.R",
+    "project_path" : null,
+    "properties" : {
+        "notebook_format" : "html_document"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
