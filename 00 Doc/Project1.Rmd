@@ -41,6 +41,8 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 Explain the plots:
 
+9.Using the following query, build a data frame for the entire data set.
+
 10.Produce the following plots and document the R used to produce them.
 
 
@@ -48,9 +50,6 @@ Explain the plots:
 source("../02 Visualizations/ggplot1.R", echo = TRUE)
 ```
 
-![](./Rplot1.png)
-![](./Rplot2.png)
-![](./Rplot3.png)
 
 
 

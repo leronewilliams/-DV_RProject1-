@@ -1,12 +1,12 @@
 {
-    "contents" : "ggplot(df4, aes(x=ORDER_ID, y=ITEM_ID))+geom_point()\n",
+    "contents" : "ggplot(df1, aes(x=CUSTOMER_STATE, y=CUSTOMER_ID))+geom_point()\nggplot(df2, aes(x=ITEM_ID, y=UNIT_PRICE))+geom_point()\nggplot(df3, aes(x=ORDER_ID, y=CUSTOMER_ID))+geom_point()\nggplot(df4, aes(x=ORDER_ID, y=ITEM_ID))+geom_point()\n",
     "created" : 1422594684661.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3662353301",
+    "hash" : "1135321136",
     "id" : "C2E7B39",
-    "lastKnownWriteTime" : 1422594889,
+    "lastKnownWriteTime" : 1422988726,
     "path" : "~/GitHub/DV_RProect1/02 Visualizations/ggplot.R",
     "project_path" : "02 Visualizations/ggplot.R",
     "properties" : {

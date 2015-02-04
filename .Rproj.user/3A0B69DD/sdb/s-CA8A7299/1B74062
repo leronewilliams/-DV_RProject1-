@@ -1,12 +1,12 @@
 {
-    "contents" : "---\ntitle: \"Project1\"\nauthor: \"Lerone Williams\"\ndate: \"Thursday, January 29, 2015\"\noutput: html_document\n---\n\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.\n\nWhen you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\n```{r}\nsummary(cars)\n```\n\nYou can also embed plots, for example:\n\n```{r, echo=FALSE}\nplot(cars)\n```\n\nNote that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.\n\n\n\n\n\n",
+    "contents" : "---\ntitle: \"CS329e Data Visualization R Project 1\"\nauthor: \"Nathan Waters, Lerone Williams\"\ndate: \"Thursday, January 29, 2015\"\noutput: html_document\n---\nProject Requirements<http://www.cs.utexas.edu/~cannata/dataVis/Projects/R%20Project%201/R%20Project%20Requirements.html>.\n\n5.Using KnitR, build an html file that documents the steps to reproduce your project. Use this html file to present a visual story about your data and what you discovered about your data using visualization techniques.\n\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. \n\n6.Build data frames for each of the 4 tables in the Orders Schema. \n\n```{r}\nlibrary(\"RCurl\")\nsource(\"../01 Data/dataframes.R\", echo = TRUE)\n```\nExplain the saved output.\n\n7. Display these data frames in the KnitR document.\n\n```{r}\ndf1 # R data frame fot the customers table\ndf2 # R data frame fot the items table\ndf3 # R data frame fot the orders table\ndf4 # R data frame fot the order_details table\n```\n\nExplain each ggplot for the data frames\n\n8.Produce an interesting plot for each data frame.\n\n\n```{r, echo=FALSE}\nlibrary(\"ggplot2\")\nsource(\"../02 Visualizations/ggplot.R\", echo = TRUE)\n```\n\nNote that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.\n\nExplain the plots:\n\n9.Using the following query, build a data frame for the entire data set.\n\n10.Produce the following plots and document the R used to produce them.\n\n\n```{r, echo=FALSE}\nsource(\"../02 Visualizations/ggplot1.R\", echo = TRUE)\n```\n\n\n\n\n\n\n\n\n",
     "created" : 1422593943999.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "583016965",
+    "hash" : "3621192177",
     "id" : "1B74062",
-    "lastKnownWriteTime" : 1422595917,
+    "lastKnownWriteTime" : 1422999970,
     "path" : "~/GitHub/DV_RProect1/00 Doc/Project1.Rmd",
     "project_path" : "00 Doc/Project1.Rmd",
     "properties" : {
