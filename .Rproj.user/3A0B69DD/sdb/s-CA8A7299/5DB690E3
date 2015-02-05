@@ -1,0 +1,16 @@
+{
+    "contents" : "# First plot\nq <- ggplot(df5, aes(x=as.Date(SHIPPED_DATE, \"%Y-%m-%d\"), y=as.Date(ORDER_DATE, \"%Y-%m-%d\"))) + geom_point(aes(color=as.factor(UNIT_PRICE)))\nq + facet_wrap(~CUSTOMER_STATE)\n#Second Plot\ns <- ggplot(df5, aes(x=as.Date(SHIPPED_DATE, \"%Y-%m-%d\"), y=as.Date(ORDER_DATE, \"%Y-%m-%d\"))) + geom_point(aes(color=as.factor(TITLE)))\ns + facet_wrap(~CUSTOMER_STATE)\n#Thrid plot\nt <- ggplot(df5, aes(x=as.Date(SHIPPED_DATE, \"%Y-%m-%d\"), y=as.Date(ORDER_DATE, \"%Y-%m-%d\"))) + geom_point(aes(color=as.factor(ARTIST)))\nt + facet_wrap(~CUSTOMER_STATE) \n\n",
+    "created" : 1423100634368.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1532485765",
+    "id" : "5DB690E3",
+    "lastKnownWriteTime" : 1423102088,
+    "path" : "~/GitHub/DV_RProect1/02 Visualizations/ggplot1.R",
+    "project_path" : "02 Visualizations/ggplot1.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

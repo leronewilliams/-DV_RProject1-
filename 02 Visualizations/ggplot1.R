@@ -8,3 +8,4 @@ s + facet_wrap(~CUSTOMER_STATE)
 #Thrid plot
 t <- ggplot(df5, aes(x=as.Date(SHIPPED_DATE, "%Y-%m-%d"), y=as.Date(ORDER_DATE, "%Y-%m-%d"))) + geom_point(aes(color=as.factor(ARTIST)))
 t + facet_wrap(~CUSTOMER_STATE)
+

@@ -1,0 +1,16 @@
+{
+    "contents" : "head(df1) # R data frame fot the customers table\nhead(df2) # R data frame fot the items table\nhead(df3) # R data frame fot the orders table\nhead(df4) # R data frame fot the order_details table",
+    "created" : 1423099140126.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1254157746",
+    "id" : "C187AA13",
+    "lastKnownWriteTime" : 1423099890,
+    "path" : "~/GitHub/DV_RProect1/01 Data/dataframes1.R",
+    "project_path" : "01 Data/dataframes1.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

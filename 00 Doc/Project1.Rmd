@@ -1,52 +1,39 @@
 ---
 title: "CS329e Data Visualization R Project 1"
 author: "Nathan Waters, Lerone Williams"
-date: "Thursday, January 29, 2015"
+due date: "Wednesday, February 04, 2015"
 output: html_document
 ---
-Project Requirements<http://www.cs.utexas.edu/~cannata/dataVis/Projects/R%20Project%201/R%20Project%20Requirements.html>.
 
-5.Using KnitR, build an html file that documents the steps to reproduce your project. Use this html file to present a visual story about your data and what you discovered about your data using visualization techniques.
+In this R Markdown document we will display and document each step of CS329e R Project 1.
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
+Project Requirements <http://www.cs.utexas.edu/~cannata/dataVis/Projects/R%20Project%201/R%20Project%20Requirements.html>.
 
-6.Build data frames for each of the 4 tables in the Orders Schema. 
+In the source folder 01 Data, the R script dataframes.R was created to connect to Dr. Cannata's Orcale database and generate 5 data frames using tables in the Orders Schema. The RCurl package was loaded to allow general HTTP requests and process the results returned by the Web server.
 
 ```{r}
-library("RCurl")
 source("../01 Data/dataframes.R", echo = TRUE)
 ```
-Explain the saved output.
 
-7. Display these data frames in the KnitR document.
+A second R script dataframes1.R was created to display each data frame that was previously created in the last step. The head() function was used to only return the first parts of each data frame.
 
 ```{r}
-df1 # R data frame fot the customers table
-df2 # R data frame fot the items table
-df3 # R data frame fot the orders table
-df4 # R data frame fot the order_details table
+source("../01 Data/dataframes1.R", echo = TRUE)
 ```
 
-Explain each ggplot for the data frames
+In order to plot each data frame, the ggplot2 package was loaded and a different geom, short for geometric objects was chosen as follows:
+df1 = geom_point(), 
+df2 = geom_path(), 
+df3 = geom_density2d(),
+df4 = geom_dotplot()
 
-8.Produce an interesting plot for each data frame.
-
-
-```{r, echo=FALSE}
-library("ggplot2")
+```{r}
 source("../02 Visualizations/ggplot.R", echo = TRUE)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Finally, using the df5 data frame created from the entire data set, the following three plots were produced.
 
-Explain the plots:
-
-9.Using the following query, build a data frame for the entire data set.
-
-10.Produce the following plots and document the R used to produce them.
-
-
-```{r, echo=FALSE}
+```{r}
 source("../02 Visualizations/ggplot1.R", echo = TRUE)
 ```
 
